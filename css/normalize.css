@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+/* try to find a nice background banner img */
+
+}
+
+.nav {
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav__item {
+    display: flex;
+    list-style: none;
+    align-items:center;
+    margin: 0 1vh;
+}   
+
+.nav__item a {
+    color: black;
+}
+
+.nav__item:first-child img{
+    max-width: 7vh;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    margin:1vh 3vh 0vh 0vh;
+}
+
+.nav__item:first-child {
+    margin-right: 10vh;
+}
+
+.header__title {
+
+}
+
+.header__subtitle {
+
+}
