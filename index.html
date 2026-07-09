@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/8c623f40ff.js" crossorigin="anonymous"></script>
-    
+
 
     <title>Omer Faruk Balik Portfolio</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
+    <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><img src="assets/images/image.png" alt="profile_photo"><a href="">Omer Faruk Balik</a></li>
-                <li class="nav__item"><a href=""><i class="fa-solid fa-house" style="color: rgb(116, 72, 63);"></i></i> Home</a></li>
+                <li class="nav__item"><img src="assets/images/image.png" alt="profile_photo"><a href="#index.html">Omer
+                        Faruk Balik</a></li>
+                <li class="nav__item"><a href="index.html"><i class="fa-solid fa-house"
+                            style="color: rgb(116, 72, 63);"></i></i> Home</a></li>
                 <li class="nav__item">/</li>
-                <li class="nav__item"><a href=""><i class="fa-solid fa-diagram-project" style="color: rgb(116, 72, 63);"></i></i> Projects</a></li>
+                <li class="nav__item"><a href="projects.html"><i class="fa-solid fa-diagram-project"
+                            style="color: rgb(116, 72, 63);"></i></i> Projects</a></li>
                 <li class="nav__item">/</li>
-                <li class="nav__item"><a href=""><i class="fa-solid fa-dumbbell" style="color: rgb(116, 72, 63);"></i></i> Skills/Tech Stack</a></li>
+                <li class="nav__item"><a href="skills.html"><i class="fa-solid fa-dumbbell"
+                            style="color: rgb(116, 72, 63);"></i></i> Skills/Tech Stack</a></li>
                 <li class="nav__item">/</li>
-                <li class="nav__item"><a href=""><i class="fa-solid fa-address-book" style="color: rgb(116, 72, 63);"></i> Contact</a></li>
+                <li class="nav__item"><a href="about.html"><i class="fa-solid fa-address-book"
+                            style="color: rgb(116, 72, 63);"></i> Contact</a></li>
             </ul>
         </nav>
 
+    <header class="header">
         <div class="header__intro">
             <h2 class="header__content">Frontend Developer</h2>
             <p class="header__text">I build clean, functional web interfaces</p>
             <ul class="header__list">
-                <li class="header__list-item"><a href=""><i class="fa-brands fa-github" style="color: #F9F9F9;"></i></a></li>
-                <li class="header__list-item"><a href=""><i class="fa-brands fa-linkedin" style="color: #F9F9F9;"></i></a></li>
-                <li class="header__list-item"><a href=""><i class="fa-solid fa-envelope" style="color: #F9F9F9;"></i></a></li>
+                <li class="header__list-item"><a href="https://github.com/omerfarukbalik"><i class="fa-brands fa-github"
+                            style="color: #F9F9F9;"></i></a></li>
+                <li class="header__list-item"><a href="https://www.linkedin.com/in/omer-faruk-balik-271636240"><i
+                            class="fa-brands fa-linkedin" style="color: #F9F9F9;"></i></a></li>
+                <li class="header__list-item"><a href="mailto:merbalk2147@gmail.com?subject=Hello&body=Hi Ömer,"><i
+                            class="fa-solid fa-envelope" style="color: #F9F9F9;"></i></a></li>
             </ul>
         </div>
     </header>
@@ -42,72 +53,129 @@
     <main class="main">
         <section>
             <div class="projects">
-                <h2><i class="fa-solid fa-code" style="color: rgb(75, 70, 67);"></i> Projects </h2>
-                <li><a href=""><i class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> projectname1</a></li>
-                <li><a href=""><i class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> projectname2</a></li>
-                <li><a href=""><i class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> projectname3</a></li>
-                <li><a href=""><i class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> projectname4</a></li>
-                <li><a href=""><i class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> projectname5</a></li>
+                <h2 class="projects__title"><i class="fa-solid fa-code" style="color: rgb(75, 70, 67);"></i> Projects
+                </h2>
+
+                <ul class="projects__list">
+                    <li class="projects__list-item"><a href="https://github.com/omerfarukbalik/layout_miami.git"><i
+                                class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> layout_miami</a></li>
+                    <li class="projects__list-item"><a href="https://github.com/omerfarukbalik/axiom"><i
+                                class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> hackathon project</a></li>
+                    <li class="projects__list-item"><a href="https://github.com/omerfarukbalik/react_list-of-goods"><i
+                                class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> react_list-of-goods</a>
+                    </li>
+                    <li class="projects__list-item"><a
+                            href="https://github.com/omerfarukbalik/react_static-list-of-posts"><i
+                                class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> react_list-of-posts</a>
+                    </li>
+                    <li class="projects__list-item"><a
+                            href="https://github.com/omerfarukbalik/react_list-of-goods-hooks"><i
+                                class="fa-solid fa-link" style="color: rgb(75, 70, 67);"></i> react_goods-hooks</a></li>
+                </ul>
             </div>
         </section>
 
         <section>
             <div class="education">
-                <h2>Education</h2>
-                <p>
-                    Currently a Software Engineering student with GPA: 3.02 / 4.0 focused on frontend development. 
-                    Building projects with React, TypeScript, and modern CSS while refining my design 
+                <h2 class="education__title"><i class="fa-solid fa-graduation-cap" style="color: rgb(75, 70, 67);"></i>
+                    Education</h2>
+                <p class="education__subtitle">
+                    Currently a Software Engineering student with GPA: 3.02 / 4.0 at Sakarya University, focused on
+                    frontend development.
+                    Building projects with React, TypeScript, and modern CSS while refining my design
                     and problem-solving skills.
                 </p>
 
-                <h3>Courses i took</h3> 
-                <ul>
-                    <li>User Interface Design and Testing </li>
-                    <li>Object Oriented Programming</li>
-                    <li>Concepts of Programming Languages</li>
-                    <li>Software Verification and Validation</li>
-                    <li>Operating Systems</li>
-                    <li>Secure Software Development</li>
-                    <li>Distributed Information and Management Systems</li>
-                    <li>Probability and Statistics</li>
+                <h3 class="education__sectitle">Courses I Took</h3>
+                <ul class="education__list">
+                    <li class="education__list-item">UI Design & Testing </li>
+                    <li class="education__list-item">OOP</li>
+                    <li class="education__list-item">Concepts of PL</li>
+                    <li class="education__list-item">Software Verification & Validation</li>
+                    <li class="education__list-item">Operating Systems</li>
+                    <li class="education__list-item">Secure Software Development</li>
+                    <li class="education__list-item">Distributed Information and Management Systems</li>
+                    <li class="education__list-item">Probability and Statistics</li>
                 </ul>
             </div>
         </section>
 
         <section>
             <div class="myarts">
-                <h2>My Arts</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, molestias?</p>
-                <!-- maybe put an img one of your arts-->
-                 <a href=""></a>
+                <h2 class="myarts__title"><i class="fa-solid fa-palette" style="color: rgb(75, 70, 67);"></i> My Arts
+                </h2>
+
+                <p class="myarts__subtitle">
+                    I make handmade leather goods under my brand Vivamood — and being an engineer,
+                    I built a Python pipeline that turns raw footage into short clips and
+                    auto-schedules them across my socials.
+                </p>
+
+                <div class="myarts__images">
+                    <img class="myarts__images-img" src="assets/images/leatherPhoto.png" alt="leather-photo">
+                    <img class="myarts__images-img" src="assets/images/leatherPhoto2.png" alt="leather-photo">
+                    <img class="myarts__images-img" src="assets/images/leatherPhoto3.png" alt="leather-photo">
+                    <img class="myarts__images-img" src="assets/images/leatherPhoto4.png" alt="leather-photo">
+                </div>
+
+                <div>
+                    <h3 class="myarts__sectitle"><i class="fa-solid fa-clapperboard"
+                            style="color: rgb(75, 70, 67);"></i> My YouTube Channel</h3>
+
+                    <p class="myarts__secsubtitle">I document the leather-making process, from raw hide to finished
+                        piece.</p>
+
+                    <a class="myarts__link" href="https://www.youtube.com/@VivamoodLeather"><i class="fa-brands fa-youtube" style="color: rgb(75, 70, 67);"></i>
+                        Vivamood Leather</a>
+                </div>
             </div>
-            <div>
-                <h3>My YouTube Channel</h3> 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, laudantium.</p>
-                <a href="">vivamood Leather</a>
-            </div>
+
         </section>
     </main>
 
-    <footer>
-        <div>
-            <div>
-                <h2>Github</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+    <footer class="footer">
+        <div class="footer__columns">
+            <div class="footer__column">
+                <h2 class="footer__column-title">
+                    <a class="footer__column-link" href="https://github.com/omerfarukbalik">
+                        <i class="fa-brands fa-github" style="color: #F9F9F9;"></i> Github
+                    </a>
+                </h2>
+
+                <p class="footer__column-subtitle">
+                    My projects, experiments, and half-finished ideas all live here. Take a look at what I'm building.
+                </p>
             </div>
 
-            <div>
-                <h2>My Resume</h2> 
-                <p>Lorem ipsum dolor sit amet.</p>
+            <div class="footer__column">
+                <h2 class="footer__column-title">
+                    <a class="footer__column-link" href="https://github.com/omerfarukbalik">
+                        <i class="fa-regular fa-file"></i> My Resume
+                    </a>
+                </h2>
+                <p class="footer__column-subtitle">
+                    Want the full picture? You can
+                    <a class="footer__column-link" href="https://github.com/omerfarukbalik">download</a>
+                    my resume here.
+                </p>
             </div>
 
-            <div>
-                <h2>Currently Learning</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
+            <div class="footer__column">
+                <h2 class="footer__column-title">
+                    <a class="footer__column-link" href="https://www.linkedin.com/in/omer-faruk-balik-271636240/">
+                        <i class="fa-solid fa-book-bookmark"></i> Currently Learning
+                    </a>
+                </h2>
 
-            <p>all rights reserved 2026</p>
+                <p class="footer__column-subtitle">
+                    Right now I'm deep into React, TypeScript, and modern CSS —
+                    sharpening my frontend skills one project at a time.
+                </p>
+            </div>
         </div>
+
+        <p class="footer__subtitle">© all rights reserved 2026</p>
     </footer>
 </body>
+
 </html>
