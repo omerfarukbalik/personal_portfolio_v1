@@ -18,10 +18,13 @@ h1, h2, h3 {
 }
 
 .nav {
-    position: fixed;
+    position: sticky;
+    width: 100%;
     top: 0;
+    left: 0;
     background-color: #DCDEDD;
-    z-index: 1;
+    z-index: 1000;
+    border-bottom: 0.4vh solid #4B4643;
 }
 
 .nav__list {
@@ -43,7 +46,7 @@ h1, h2, h3 {
 }   
 
 .nav__item a {
-    color: black;
+    color: #000000; 
     text-decoration: none; 
     transition: transform 0.5s ease-out; 
 }
