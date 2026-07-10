@@ -7,13 +7,16 @@
     flex-direction: column;
     color: var(--color-gray);
     padding: 10vh 6vh 10vh 6vh;
+    
 }
 
 .footer__columns {
     display: flex;
     flex-direction: row;
     filter: var(--shadow-inverse);
-    margin: 0 auto;
+    margin: 2vh auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__column {
@@ -23,7 +26,7 @@
     padding: 1vh;
     width: 33%;
     transition: var(--transition-base);
-
+    
 }
 
 .footer__column:hover {
@@ -57,5 +60,11 @@
 @media (max-width: 840px) {
     .footer__columns {
         flex-direction: column;
+        align-items: center;
+    }
+ 
+    .footer__column {
+        width: 80%;
+        margin: 1vh auto;
     }
 }
