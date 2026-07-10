@@ -3,6 +3,8 @@
     padding: 0px;
 }
 
+
+
 body, p {
   font-family: "Inter", sans-serif;   /* body text everywhere */
   font-weight: 400;
@@ -14,7 +16,7 @@ h1, h2, h3 {
 }
 
 .header {
-    border-top: 0.5vh solid #4B4643;
+    border-top: var(--border-width) solid var(--color-charcoal);
 }
 
 .nav {
@@ -22,9 +24,9 @@ h1, h2, h3 {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #DCDEDD;
+    background-color: var(--color-gray);
     z-index: 1000;
-    border-bottom: 0.4vh solid #4B4643;
+    border-bottom: var(--border-width-thin) solid var(--color-charcoal);
 }
 
 .nav__list {
@@ -32,7 +34,7 @@ h1, h2, h3 {
     justify-content: center;
     width: 80%;
     margin: 0 auto;
-    transition: transform 0.5s ease-out; 
+    transition: var(--transition-base);
 }
 
 .nav__item {
@@ -42,13 +44,13 @@ h1, h2, h3 {
     margin: 1vh 2vh 1vh 0vh;
     white-space: nowrap;
     font-weight: 500;
-    filter: drop-shadow(1vh 1vh 2vh rgba(0, 0, 0, 0.5));
-}   
+    filter: var(--shadow-medium);
+}
 
 .nav__item a {
-    color: #000000; 
-    text-decoration: none; 
-    transition: transform 0.5s ease-out; 
+    color: var(--color-black);
+    text-decoration: none;
+    transition: var(--transition-base);
 }
 
 .nav__item a:hover {
@@ -61,7 +63,7 @@ h1, h2, h3 {
     border-radius: 50%;
     position: relative;
     margin-right: 2vh;
-    transition: transform 0.5s ease-out; 
+    transition: var(--transition-base);
 }
 
 .nav__item:first-child img:hover{ 
@@ -78,12 +80,13 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     padding: 5vh;
-    color: #F9F9F9;
+    color: var(--color-cream);
 
-    background: hsla(10, 30%, 35%, 1);
-    background: linear-gradient(90deg, hsla(10, 30%, 35%, 1) 26%, hsla(23, 6%, 28%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(10, 30%, 35%, 1) 26%, hsla(23, 6%, 28%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(10, 30%, 35%, 1) 26%, hsla(23, 6%, 28%, 1) 100%);
+    background: var(--color-brown);
+    background: linear-gradient(90deg, var(--color-brown) 26%, var(--color-charcoal) 100%);
+    background: -moz-linear-gradient(90deg, var(--color-brown) 26%, var(--color-charcoal) 100%);
+    background: -webkit-linear-gradient(90deg, var(--color-brown) 26%, var(--color-charcoal) 100%);
+    /* legacy IE gradient fallback, requires literal hex, can't reference the rgb variables */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#74483F", endColorstr="#4B4643", GradientType=1 );
 }
 
@@ -91,13 +94,13 @@ h1, h2, h3 {
     text-align: center;
     font-weight: 600;
     margin-bottom: 4vh;
-    filter: drop-shadow(1vh 1vh 2vh rgba(0, 0, 0, 1));
+    filter: var(--shadow-strong);
 }
 
 .header__text {
     text-align: center;
     margin-bottom: 5vh;
-    filter: drop-shadow(1vh 1vh 2vh rgba(0, 0, 0, 1));
+    filter: var(--shadow-strong);
 }
 
 .header__list {
@@ -110,8 +113,8 @@ h1, h2, h3 {
 .header__list-item {
     font-size: 3rem;
     margin-right: 2rem;
-    transition: transform .875s cubic-bezier(.34,1.56,.64,1);
-    filter: drop-shadow(1vh 1vh 2vh rgba(0, 0, 0, 0.5));
+    transition: var(--transition-bounce);
+    filter: var(--shadow-medium);
 }
 
 .header__list-item:first-child:hover {
@@ -130,21 +133,21 @@ h1, h2, h3 {
     display: flex;
     margin: 0 auto;
     padding: 3ch 6vh 3vh 6vh;
-    background-color: #DCDEDD;
-    border-top: 0.5vh solid #4B4643;
+    background-color: var(--color-gray);
+    border-top: var(--border-width) solid var(--color-charcoal);
 }
 
 section {
     width: 33%;
-    filter: drop-shadow(1vh 1vh 2vh rgba(0, 0, 0, 0.22));
+    filter: var(--shadow-soft);
 }
 
 .projects {
-    list-style: none; 
+    list-style: none;
 }
 
 .projects__title {
-    color: #744B3F;
+    color: var(--color-brown);
     text-align: left;
     margin: 1vh 1vh 4vh 1vh;
 }
@@ -157,7 +160,7 @@ section {
     margin-left: 4vh;
     margin-bottom: 2vh;
     list-style: none;
-    transition: transform 0.5s ease-out;
+    transition: var(--transition-base);
     display: inline-block;
 }
 
@@ -167,10 +170,10 @@ section {
 
 .projects__list-item a {
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
     align-items: center;
     padding: 0.5vh;
-    
+
 }
 
 .education {
@@ -178,7 +181,7 @@ section {
 }
 
 .education__title, .education__sectitle {
-    color: #744B3F;
+    color: var(--color-brown);
     text-align: left;
     margin: 1vh 0vh 1vh 0vh
 }
@@ -202,7 +205,7 @@ section {
 }
 
 .myarts__title, .myarts__sectitle {
-    color: #744B3F;
+    color: var(--color-brown);
     text-align: left;
     margin: 1vh 0vh 1vh 0vh
 }
@@ -216,6 +219,7 @@ section {
 .myarts__images {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .myarts__images-img {
@@ -230,9 +234,9 @@ section {
 
 .myarts__link {
     text-decoration: none;
-    color:#744B3F;
+    color: var(--color-brown);
     display: inline-block;
-    transition: transform 0.5s ease-out;
+    transition: var(--transition-base);
 }
 
 .myarts__link:hover {
@@ -240,30 +244,30 @@ section {
 }
 
 .footer {
-    border-top: 0.5vh solid #4B4643;
-    border-bottom: 0.5vh solid #DCDEDD;
-    background: linear-gradient(to bottom, #744B3F 80%, #DCDEDD 100%);
+    border-top: var(--border-width) solid var(--color-charcoal);
+    border-bottom: var(--border-width) solid var(--color-gray);
+    background: linear-gradient(to bottom, var(--color-brown) 80%, var(--color-gray) 100%);
     display: flex;
     flex-direction: column;
-    color: #DCDEDD;
+    color: var(--color-gray);
     padding: 10vh 6vh 10vh 6vh;
 }
 
 .footer__columns {
     display: flex;
     flex-direction: row;
-    filter: drop-shadow(0 0.4vh 1.2vh rgba(255, 255, 255, 0.3));
+    filter: var(--shadow-inverse);
     margin: 0 auto;
 }
 
 .footer__column {
-    border: 0.1vh solid #4B4643;
+    border: 0.1vh solid var(--color-charcoal);
     border-radius: 3vh;
     margin: 0vh 1vh;
     padding: 1vh;
     width: 33%;
-    transition: transform 0.5s ease-out;
-    
+    transition: var(--transition-base);
+
 }
 
 .footer__column:hover {
@@ -272,12 +276,12 @@ section {
 
 .footer__column-title {
     text-align: center;
-    color: #DCDEDD;
+    color: var(--color-gray);
     margin-bottom: 1vh;
 }
 
 .footer__column-subtitle {
-    color: black;
+    color: var(--color-black);
     margin-bottom: 1vh;
     text-align: center;
     line-height: 2.3vh;
@@ -289,7 +293,7 @@ section {
 }
 
 .footer__column-link {
-    color: #DCDEDD;
+    color: var(--color-gray);
     text-underline-offset: 0.3vh;
     text-decoration: none;
 }

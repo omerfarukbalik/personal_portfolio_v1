@@ -1,0 +1,22 @@
+:root {
+    /* colors */
+    --color-brown: rgb(116, 72, 63);
+    --color-charcoal: rgb(75, 70, 67);
+    --color-cream: rgb(249, 249, 249);
+    --color-gray: rgb(220, 222, 221);
+    --color-black: rgb(0, 0, 0);
+
+    /* drop-shadows share the same 1vh 1vh 2vh offset, only the alpha changes */
+    --shadow-strong: drop-shadow(1vh 1vh 2vh rgba(0, 0, 0, 1));
+    --shadow-medium: drop-shadow(1vh 1vh 2vh rgba(0, 0, 0, 0.5));
+    --shadow-soft: drop-shadow(1vh 1vh 2vh rgba(0, 0, 0, 0.22));
+    --shadow-inverse: drop-shadow(0 0.4vh 1.2vh rgba(255, 255, 255, 0.3));
+
+    /* transitions */
+    --transition-base: transform 0.5s ease-out;
+    --transition-bounce: transform 0.875s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* border widths */
+    --border-width: 0.5vh;
+    --border-width-thin: 0.4vh;
+}

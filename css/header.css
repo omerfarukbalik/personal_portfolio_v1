@@ -1,0 +1,66 @@
+body, p {
+  font-family: "Inter", sans-serif;   /* body text everywhere */
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", serif;     /* headings */
+  font-weight: 600;
+}
+
+.header {
+    border-top: var(--border-width) solid var(--color-charcoal);
+}
+
+.header__intro {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    color: var(--color-cream);
+
+    background: var(--color-brown);
+    background: linear-gradient(90deg, var(--color-brown) 26%, var(--color-charcoal) 100%);
+    background: -moz-linear-gradient(90deg, var(--color-brown) 26%, var(--color-charcoal) 100%);
+    background: -webkit-linear-gradient(90deg, var(--color-brown) 26%, var(--color-charcoal) 100%);
+    /* legacy IE gradient fallback, requires literal hex, can't reference the rgb variables */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#74483F", endColorstr="#4B4643", GradientType=1 );
+}
+
+.header__content {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 4vh;
+    filter: var(--shadow-strong);
+}
+
+.header__text {
+    text-align: center;
+    margin-bottom: 5vh;
+    filter: var(--shadow-strong);
+}
+
+.header__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+.header__list-item {
+    font-size: 3rem;
+    margin-right: 2rem;
+    transition: var(--transition-bounce);
+    filter: var(--shadow-medium);
+}
+
+.header__list-item:first-child:hover {
+    transform: rotate(360deg);
+}
+
+.header__list-item:nth-child(2):hover {
+    transform: translateY(-8px);
+}
+
+.header__list-item:nth-child(3):hover {
+    transform: rotateY(180deg);
+}
