@@ -1,16 +1,17 @@
 .skills {
     display: flex;
     flex-direction: column;
-    padding: 4vh;
+    padding: 2vh;
 }
 
 .skill {
-    margin: 2vh;
+    margin: 1vh;
 }
 
 .skill__title {
     transition: var(--transition-base);
     margin-bottom: 1vh;
+    color: var(--color-brown)
 }
 
 .skill__title:hover {

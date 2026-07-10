@@ -1,28 +1,26 @@
 .main {
     display: flex;
     margin: 0 auto;
-    padding: 3ch 6vh 3vh 6vh;
+    padding: 3vh 6vh 3vh 6vh;
     background-color: var(--color-gray);
     border-top: var(--border-width) solid var(--color-charcoal);
+    
 }
 
 section {
-    width: 33%;
+    
     filter: var(--shadow-soft);
 }
 
 .projects {
     list-style: none;
+    width: 33%;
 }
 
 .projects__title {
     color: var(--color-brown);
     text-align: left;
     margin: 1vh 1vh 4vh 1vh;
-}
-
-.projects__list {
-    
 }
 
 .projects__list-item {
@@ -110,4 +108,14 @@ section {
 
 .myarts__link:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 840px) {
+    .main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-basis: 100%;
+    }
+
+
 }

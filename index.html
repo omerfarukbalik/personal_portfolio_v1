@@ -18,13 +18,17 @@
 
 <body>
     <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item">
-                <img src="assets/images/image.png" alt="profile_photo">
-    
-                <a href="index.html">Omer Faruk Balik</a>
-            </li>
+        <div class="nav__brand">
+            <img src="assets/images/image.png" alt="profile_photo">
+            <a href="index.html">Omer Faruk Balik</a>
+        </div>
 
+        <input type="checkbox" id="nav-toggle" class="nav__toggle-input">
+        <label for="nav-toggle" class="nav__toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav__list">
             <li class="nav__item">
                 <a href="index.html">
                     <i class="fa-solid fa-house" style="color: var(--color-brown);"></i>
@@ -32,16 +36,16 @@
                 </a>
             </li>
 
-            <li class="nav__item">/</li>
-            
+            <li class="nav__item nav__separator">/</li>
+
             <li class="nav__item">
                 <a href="projects.html">
-                    <i class="fa-solid fa-diagram-project" style="color: var(--color-brown);"></i> 
+                    <i class="fa-solid fa-diagram-project" style="color: var(--color-brown);"></i>
                     Projects
                 </a>
             </li>
 
-            <li class="nav__item">/</li>
+            <li class="nav__item nav__separator">/</li>
 
             <li class="nav__item">
                 <a href="skills.html">
@@ -50,7 +54,7 @@
                 </a>
             </li>
 
-            <li class="nav__item">/</li>
+            <li class="nav__item nav__separator">/</li>
 
             <li class="nav__item">
                 <a href="about.html">

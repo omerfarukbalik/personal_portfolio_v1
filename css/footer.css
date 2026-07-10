@@ -53,3 +53,9 @@
     text-underline-offset: 0.3vh;
     text-decoration: none;
 }
+
+@media (max-width: 840px) {
+    .footer__columns {
+        flex-direction: column;
+    }
+}
