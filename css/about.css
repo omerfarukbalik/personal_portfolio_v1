@@ -1,0 +1,15 @@
+.about {
+    background-color: var(--color-gray);
+    display: flex;
+    padding: 4vh;
+}
+
+.about__text {
+    line-height: 2.5vh;
+    text-indent: 2vh;
+}
+
+.about__link {
+    text-decoration: none;
+    color: var(--color-brown)
+}

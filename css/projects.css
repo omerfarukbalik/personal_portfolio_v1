@@ -1,0 +1,28 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 4vh;
+}
+
+.project {
+    margin: 2vh;
+}
+
+.project__title {   
+    transition: var(--transition-base);
+    margin-bottom: 1vh;
+}
+
+.project__title:hover {
+    transform: scale(1.05);
+}
+
+.project__subtitle {
+
+}
+
+.project__link  {
+    text-decoration: none;
+    color: var(--color-brown);    
+}
+
